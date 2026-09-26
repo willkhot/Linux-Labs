@@ -1,8 +1,6 @@
-# Linux & Cloud Labs
+# 🐧 Linux Labs
 
-Hands-on labs covering Linux system administration and cloud infrastructure on AWS. Each lab folder has a write-up with objectives, the steps I followed, screenshots, and key takeaways.
-
-## Labs
+Linux system administration, security hardening, and IP networking, built on local VirtualBox VMs (plus one AWS EC2 deployment).
 
 | # | Lab | Topics |
 |---|---|---|
@@ -12,23 +10,4 @@ Hands-on labs covering Linux system administration and cloud infrastructure on A
 | 04 | [Internetworking Basics: One Router, Two Networks](lab-04-internetworking-one-router/) | Subnet planning, static IPs, VirtualBox internal networks, IP forwarding, default gateways |
 | 05 | [Internetworking Basics: Two Routers, Three Networks](lab-05-internetworking-two-routers/) | /29 subnetting, multi-router topology, static routes, next-hop routing, hop-by-hop troubleshooting |
 
-## Skills Practiced
-
-- Linux installation and command-line basics
-- Virtualization (VirtualBox)
-- AWS EC2: launching, securing and terminating instances
-- SSH key-based authentication
-- Installing and managing services (OpenSSH, Apache) with `apt` and `systemctl`
-- VM networking (NAT vs. Host-only)
-- Git/GitHub version control and deploying to a web server
-- Linux user, group and permission management
-- SSH hardening (key-only auth, no root login, group-based access)
-- Host firewalls with ufw
-- IPv4 subnet planning and static addressing
-- Linux as a router (IP forwarding, default gateways)
-- Static routing across multiple routers
-- Cloud security best practices
-
-## Security Note
-
-Screenshots and commands in this repository are sanitized. Account IDs, public IP addresses, hostnames, emails, usernames and keys are redacted or replaced with placeholders. All cloud resources shown were terminated after each lab.
+[← Back to all labs](../)
