@@ -30,11 +30,6 @@ Here's what I've picked up so far:
 - Setting up a basic firewall that only lets in what's needed
 - Always leaving myself a way back in before changing login settings (I learned that one by locking myself out)
 
-## More Labs
-
-- [☁️ Cloud Labs](https://github.com/willkhot/Cloud-Labs)
-- [🔐 IAM Labs](https://github.com/willkhot/IAM-Labs)
-
 ## Author
 
 **Will Khotsyphom**
