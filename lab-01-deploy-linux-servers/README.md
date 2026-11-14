@@ -8,7 +8,7 @@ The EC2 part was the more interesting half. Before launching anything I had to c
 
 ## Architecture
 
-![Architecture diagram](diagrams/architecture.svg)
+![Architecture diagram](diagrams/architecture-v2.svg)
 
 ## Objectives
 

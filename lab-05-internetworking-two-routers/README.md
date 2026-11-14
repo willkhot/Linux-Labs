@@ -8,7 +8,7 @@ The catch is that each router only knows about the two networks it's plugged int
 
 ## Architecture
 
-![Architecture diagram](diagrams/architecture.svg)
+![Architecture diagram](diagrams/architecture-v2.svg)
 
 ## Topology
 

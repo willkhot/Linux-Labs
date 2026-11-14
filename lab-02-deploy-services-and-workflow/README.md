@@ -8,7 +8,7 @@ From there I installed OpenSSH so I could manage the server remotely, then insta
 
 ## Architecture
 
-![Architecture diagram](diagrams/architecture.svg)
+![Architecture diagram](diagrams/architecture-v2.svg)
 
 The diagram below shows how everything connects.
 

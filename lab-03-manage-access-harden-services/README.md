@@ -10,7 +10,7 @@ The big takeaway is that installing a service is only half the job. A lot of rea
 
 ## Architecture
 
-![Architecture diagram](diagrams/architecture.svg)
+![Architecture diagram](diagrams/architecture-v2.svg)
 
 ## Objectives
 

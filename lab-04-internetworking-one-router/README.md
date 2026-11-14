@@ -10,7 +10,7 @@ Machines on the same network could ping each other right away, but machine-C on 
 
 ## Architecture
 
-![Architecture diagram](diagrams/architecture.svg)
+![Architecture diagram](diagrams/architecture-v2.svg)
 
 ## Topology
 
