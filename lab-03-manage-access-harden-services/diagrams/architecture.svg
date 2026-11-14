@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 510" width="980" height="510" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect width="980" height="510" fill="#ffffff"/>
+<text x="490.0" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#222">Lab 3 - Access Control &amp; Host Hardening</text>
+<text x="490.0" y="56" text-anchor="middle" font-size="13" fill="#666">Defense in depth on the Ubuntu VM (192.168.56.101)</text>
+<rect x="30" y="100" width="200" height="300" rx="10" fill="#e8f0fe" stroke="#4a7fd4" stroke-width="2"/>
+<text x="42" y="120" font-size="13" font-weight="700" fill="#4a7fd4">Windows host</text>
+<rect x="45" y="135" width="170" height="60" rx="10" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+<text x="130.0" y="161.5" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Host-only IP</text>
+<text x="130.0" y="178.5" text-anchor="middle" font-size="12" fill="#444">192.168.56.1</text>
+<rect x="45" y="215" width="170" height="100" rx="10" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+<text x="130.0" y="253.0" text-anchor="middle" font-size="14" font-weight="700" fill="#222">SSH clients</text>
+<text x="130.0" y="270.0" text-anchor="middle" font-size="12" fill="#444">ed25519 key per user</text>
+<text x="130.0" y="287.0" text-anchor="middle" font-size="12" fill="#444">alice, bob, admin</text>
+<rect x="300" y="80" width="650" height="390" rx="10" fill="#e6f7ec" stroke="#3a9d5d" stroke-width="2"/>
+<text x="312" y="100" font-size="13" font-weight="700" fill="#3a9d5d">Ubuntu Server VM</text>
+<rect x="320" y="115" width="130" height="330" rx="10" fill="#fff8d6" stroke="#c9a400" stroke-width="2"/>
+<text x="385.0" y="217.0" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Layer 1</text>
+<text x="385.0" y="234.0" text-anchor="middle" font-size="12" fill="#444">ufw firewall</text>
+<text x="385.0" y="251.0" text-anchor="middle" font-size="12" fill="#444"></text>
+<text x="385.0" y="268.0" text-anchor="middle" font-size="12" fill="#444">22/tcp from</text>
+<text x="385.0" y="285.0" text-anchor="middle" font-size="12" fill="#444">192.168.56.1 only</text>
+<text x="385.0" y="302.0" text-anchor="middle" font-size="12" fill="#444"></text>
+<text x="385.0" y="319.0" text-anchor="middle" font-size="12" fill="#444">80/tcp from anywhere</text>
+<text x="385.0" y="336.0" text-anchor="middle" font-size="12" fill="#444"></text>
+<text x="385.0" y="353.0" text-anchor="middle" font-size="12" fill="#444">default: deny in</text>
+<rect x="480" y="115" width="200" height="330" rx="10" fill="#ffe8e8" stroke="#d44a4a" stroke-width="2"/>
+<text x="580.0" y="217.0" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Layer 2</text>
+<text x="580.0" y="234.0" text-anchor="middle" font-size="12" fill="#444">sshd hardening</text>
+<text x="580.0" y="251.0" text-anchor="middle" font-size="12" fill="#444"></text>
+<text x="580.0" y="268.0" text-anchor="middle" font-size="12" fill="#444">PasswordAuth no</text>
+<text x="580.0" y="285.0" text-anchor="middle" font-size="12" fill="#444">PermitRootLogin no</text>
+<text x="580.0" y="302.0" text-anchor="middle" font-size="12" fill="#444">AllowGroups</text>
+<text x="580.0" y="319.0" text-anchor="middle" font-size="12" fill="#444">grp-sshlogin</text>
+<text x="580.0" y="336.0" text-anchor="middle" font-size="12" fill="#444"></text>
+<text x="580.0" y="353.0" text-anchor="middle" font-size="12" fill="#444">pubkey auth only</text>
+<rect x="710" y="115" width="220" height="160" rx="10" fill="#e6f7ec" stroke="#3a9d5d" stroke-width="2"/>
+<text x="820.0" y="166.0" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Users &amp; groups</text>
+<text x="820.0" y="183.0" text-anchor="middle" font-size="12" fill="#444">alice: sudo, grp-sshlogin</text>
+<text x="820.0" y="200.0" text-anchor="middle" font-size="12" fill="#444">bob: grp-sshlogin</text>
+<text x="820.0" y="217.0" text-anchor="middle" font-size="12" fill="#444">admin: added to group</text>
+<text x="820.0" y="234.0" text-anchor="middle" font-size="12" fill="#444">after the lockout fix</text>
+<rect x="710" y="300" width="220" height="60" rx="10" fill="#f4f4f4" stroke="#888" stroke-width="2"/>
+<text x="820.0" y="326.5" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Home dirs 0750</text>
+<text x="820.0" y="343.5" text-anchor="middle" font-size="12" fill="#444">users can't read each other</text>
+<rect x="710" y="385" width="220" height="60" rx="10" fill="#e6f7ec" stroke="#3a9d5d" stroke-width="2"/>
+<text x="820.0" y="411.5" text-anchor="middle" font-size="14" font-weight="700" fill="#222">Apache2 :80</text>
+<text x="820.0" y="428.5" text-anchor="middle" font-size="12" fill="#444">open to all</text>
+<line x1="230" y1="260" x2="320" y2="260" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<line x1="450" y1="260" x2="480" y2="260" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<line x1="680" y1="200" x2="710" y2="200" stroke="#555" stroke-width="2" marker-end="url(#a)"/>
+<text x="490" y="495" text-anchor="middle" font-size="12" fill="#444">Network, then service, then account, then file permissions: each layer stops a different class of attacker</text>
+</svg>

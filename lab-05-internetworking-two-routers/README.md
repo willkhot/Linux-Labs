@@ -6,6 +6,10 @@ This one picks up where [Lab 4](../lab-04-internetworking-one-router/) left off,
 
 The catch is that each router only knows about the two networks it's plugged into. router-1 has no idea network-3 exists, so it drops anything headed there. The fix is static routes, where you tell each router directly: "to reach that network, send it to the other router." It has to work in both directions, or the ping gets there but the reply never makes it back. I also used a smaller subnet (`/29`, which gives 6 usable addresses) for the link between the routers. It only needs a couple of addresses, so a full `/24` with 254 would be a waste.
 
+## Architecture
+
+![Architecture diagram](diagrams/architecture.svg)
+
 ## Topology
 
 ```mermaid

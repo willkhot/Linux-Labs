@@ -6,6 +6,10 @@ In this lab I took an Ubuntu Server VM and made it host a website. The VM has tw
 
 From there I installed OpenSSH so I could manage the server remotely, then installed Apache so it could serve web pages. The last part was the workflow: I built a simple site on my laptop, tracked it with Git, pushed it to GitHub, then cloned it onto the server and copied it into Apache's web folder. It's a small version of how code gets from a developer's machine onto a live server.
 
+## Architecture
+
+![Architecture diagram](diagrams/architecture.svg)
+
 The diagram below shows how everything connects.
 
 ```mermaid

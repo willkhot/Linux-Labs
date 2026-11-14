@@ -6,6 +6,10 @@ This was the first lab, and the goal was to get a Linux server running two diffe
 
 The EC2 part was the more interesting half. Before launching anything I had to create a key pair, which is how you log in instead of using a password, and a security group, which acts like a firewall in front of the instance. I set the security group to only allow SSH from my own IP. Once the instance was running I SSH'd into it from PowerShell, made sure everything worked, and then terminated it so it wouldn't keep costing money or sit there exposed.
 
+## Architecture
+
+![Architecture diagram](diagrams/architecture.svg)
+
 ## Objectives
 
 - Create and run a Linux VM with a type-2 hypervisor (VirtualBox)

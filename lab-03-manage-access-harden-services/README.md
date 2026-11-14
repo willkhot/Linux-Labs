@@ -8,6 +8,10 @@ I created two users, alice and bob, gave only alice admin rights, and made it so
 
 The big takeaway is that installing a service is only half the job. A lot of real attacks go after services that were set up and never configured properly.
 
+## Architecture
+
+![Architecture diagram](diagrams/architecture.svg)
+
 ## Objectives
 
 - Manage users, groups and home-directory permissions on Linux

@@ -8,6 +8,10 @@ Machines on the same network could ping each other right away, but machine-C on 
 
 > **Next:** [Lab 5](../lab-05-internetworking-two-routers/) extends this to two routers, three networks and static routes.
 
+## Architecture
+
+![Architecture diagram](diagrams/architecture.svg)
+
 ## Topology
 
 ```mermaid
