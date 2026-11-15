@@ -2,11 +2,25 @@
 
 Hands-on labs covering Linux system administration, networking, and host security, built on local VirtualBox VMs (plus one AWS EC2 deployment). Each lab has a write-up with objectives, the steps I followed, screenshots, and key takeaways.
 
+## Labs
+
+### Server Setup
+
 | # | Lab | Topics |
 |---|---|---|
 | 01 | [Deploy Linux Servers](lab-01-deploy-linux-servers/) | VirtualBox, Ubuntu Server, AWS EC2, Security Groups, SSH key pairs |
 | 02 | [Deploy Services, Test, and Manage Workflow](lab-02-deploy-services-and-workflow/) | NAT/Host-only networking, OpenSSH, Apache2, systemctl, Git/GitHub deploy workflow |
+
+### Access and Security
+
+| # | Lab | Topics |
+|---|---|---|
 | 03 | [Manage Access, Harden Services, Host Security Basics](lab-03-manage-access-harden-services/) | Users/groups, file permissions, sudo, SSH keys, sshd hardening, AllowGroups, ufw firewall |
+
+### Networking
+
+| # | Lab | Topics |
+|---|---|---|
 | 04 | [Internetworking: One Router, Two Networks](lab-04-internetworking-one-router/) | Subnet planning, static IPs, VirtualBox internal networks, IP forwarding, default gateways |
 | 05 | [Internetworking: Two Routers, Three Networks](lab-05-internetworking-two-routers/) | /29 subnetting, multi-router topology, static routes, next-hop routing, hop-by-hop troubleshooting |
 
