@@ -1,6 +1,6 @@
 # 🐧 Linux Labs
 
-Hands-on labs covering Linux system administration, networking, and host security, built on local VirtualBox VMs (plus one AWS EC2 deployment). Each lab has a write-up with objectives, the steps I followed, screenshots, and key takeaways.
+Hands-on labs covering Linux system administration, networking, and host security, built on local VirtualBox VMs and AWS EC2. Each lab has a write-up with objectives, the steps I followed, screenshots, and key takeaways.
 
 ## Labs
 
@@ -24,6 +24,12 @@ Hands-on labs covering Linux system administration, networking, and host securit
 | 04 | [Internetworking: One Router, Two Networks](lab-04-internetworking-one-router/) | Subnet planning, static IPs, VirtualBox internal networks, IP forwarding, default gateways |
 | 05 | [Internetworking: Two Routers, Three Networks](lab-05-internetworking-two-routers/) | /29 subnetting, multi-router topology, static routes, next-hop routing, hop-by-hop troubleshooting |
 
+### Automation
+
+| # | Lab | Topics |
+|---|---|---|
+| 06 | [Automating Web Servers with Ansible in AWS](lab-06-ansible-automation-aws/) | Ansible control node, inventory, ad-hoc ping, playbooks and roles, SSH agent forwarding, self-referencing security groups, ufw, Apache |
+
 ## What I've Been Learning
 
 Here's what I've picked up so far:
@@ -43,6 +49,10 @@ Here's what I've picked up so far:
 - Using SSH keys instead of passwords, and limiting who's allowed to log in
 - Setting up a basic firewall that only lets in what's needed
 - Always leaving myself a way back in before changing login settings (I learned that one by locking myself out)
+
+**Automation**
+- Using Ansible to configure a firewall, install Apache, and deploy my site on two servers with one command
+- Reaching private servers through one control node with SSH agent forwarding, so my key never leaves my laptop
 
 ## Author
 
